@@ -26,6 +26,9 @@ export const Header: VFC = memo(() => {
         color="gray.50"
         align="center"
         justify="space-between"
+{/* 1つ目の中括弧はHTML上にJSを記述するから。２つ目の中括弧はオブジェクトを記載するため。
+　　　　　　　 通常の場合はpaddingは3(0.75rem), ブレイクポイント(md:48em)に達した時のパディングは5(1.25rem)。
+*/}
         padding={{ base: 3, md: 5 }}
       >
         <Flex
@@ -35,6 +38,7 @@ export const Header: VFC = memo(() => {
           _hover={{ cursor: "pointer" }}
           onClick={onClickHome}
         >
+{/*  fontSizeのbaseは通常のフォントサイズ、mdはブレイクポイント(48em)に達した時のフォントサイズ         */}
           <Heading as="h1" fontSize={{ base: "md", md: "lg" }}>
             ユーザー管理アプリ
           </Heading>
