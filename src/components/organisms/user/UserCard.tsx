@@ -25,10 +25,12 @@ export const UserCard: VFC<Props> = memo(props => {
     >
       <Stack textAlign="center">
         <Image
+{/*  画像を丸く表示させる */}
           borderRadius="full"
           boxSize="160px"
           src={imageUrl}
           alt={userName}
+{/* 画像を中央揃えにする  */}
           m="auto"
         />
         <Text fontSize="lg" fontWeight="bold">
